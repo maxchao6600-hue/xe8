@@ -1,0 +1,175 @@
+@import "tailwindcss";
+
+:root {
+  --bg: #09090b;
+  --elevated: #121214;
+  --soft: #1b1b1e;
+  --line: rgba(246, 243, 238, 0.12);
+  --ink: #f6f3ee;
+  --muted: #a39e94;
+  --gold: #d4b483;
+  --gold-deep: #b8925a;
+  --night: #09090b;
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-elevated: var(--elevated);
+  --color-soft: var(--soft);
+  --color-line: var(--line);
+  --color-ink: var(--ink);
+  --color-muted: var(--muted);
+  --color-gold: var(--gold);
+  --color-gold-deep: var(--gold-deep);
+  --color-night: var(--night);
+  --font-sans: var(--font-sans);
+  --font-serif: var(--font-serif);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  background: var(--bg);
+}
+
+body {
+  margin: 0;
+  min-height: 100%;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-sans), "PingFang SC", "Noto Sans SC", "Microsoft YaHei", sans-serif;
+  text-rendering: optimizeLegibility;
+}
+
+html.locale-zh h1,
+html.locale-zh h2,
+html.locale-zh .font-display {
+  font-family: var(--font-sans), "PingFang SC", "Noto Sans SC", "Microsoft YaHei", sans-serif;
+  font-weight: 560;
+}
+
+body,
+html {
+  overflow-x: clip;
+}
+
+:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 3px;
+}
+
+::selection {
+  background: var(--gold);
+  color: var(--night);
+}
+
+.shell {
+  width: min(1120px, calc(100% - 2rem));
+  margin-inline: auto;
+}
+
+.font-display {
+  font-family: var(--font-serif), Georgia, "Times New Roman", serif;
+  font-weight: 400;
+  letter-spacing: -0.03em;
+}
+
+.eyebrow {
+  color: var(--gold);
+  font-size: 0.75rem;
+  font-weight: 650;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.prose-xe8 {
+  color: var(--muted);
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+.prose-xe8 h2,
+.prose-xe8 h3 {
+  color: var(--ink);
+  margin: 2rem 0 0.75rem;
+}
+
+.prose-xe8 h2 {
+  font-size: 1.7rem;
+}
+
+.prose-xe8 h3 {
+  font-size: 1.25rem;
+}
+
+.prose-xe8 p {
+  margin: 0 0 1rem;
+}
+
+.prose-xe8 ul {
+  margin: 0 0 1rem;
+  padding-left: 1.15rem;
+}
+
+.prose-xe8 li {
+  margin: 0.35rem 0;
+}
+
+.prose-xe8 table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 0 1.25rem;
+  font-size: 0.95rem;
+}
+
+.prose-xe8 th,
+.prose-xe8 td {
+  border-bottom: 1px solid var(--line);
+  text-align: left;
+  padding: 0.7rem 0.4rem;
+  vertical-align: top;
+}
+
+.prose-xe8 th {
+  color: var(--ink);
+  font-weight: 650;
+}
+
+.marquee-track {
+  display: flex;
+  gap: 1rem;
+  width: max-content;
+  animation: marquee 42s linear infinite;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  .marquee-track {
+    animation: none;
+    flex-wrap: wrap;
+    width: auto;
+  }
+}
