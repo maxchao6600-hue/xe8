@@ -23,14 +23,14 @@ export function Hero({
   return (
     <section className="relative min-h-[34rem] overflow-hidden sm:min-h-[38rem] lg:min-h-[44rem]">
       <Image
-        src="/images/hero.jpg"
+        src="/assets/hero/xe8-hero-banner.webp"
         alt={imageAlt}
         fill
         priority
         sizes="100vw"
-        className="object-cover object-[70%_center]"
+        className="object-cover object-[center_42%] sm:object-[70%_center]"
       />
-      <div className="absolute inset-0 bg-gradient-to-r from-night via-night/85 to-night/25" />
+      <div className="absolute inset-0 bg-gradient-to-t from-night via-night/55 to-night/10 sm:bg-gradient-to-r sm:from-night sm:via-night/72 sm:to-transparent" />
       <div className="shell relative flex min-h-[34rem] items-end py-12 sm:min-h-[38rem] sm:py-16 lg:min-h-[44rem] lg:items-center">
         <div className="max-w-xl">
           <p className="eyebrow">{eyebrow}</p>

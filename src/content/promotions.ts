@@ -4,11 +4,11 @@ export const promotions: Promotion[] = [
   {
     id: "welcome-offer",
     slug: "welcome-offer",
-    image: "/images/promo-welcome.jpg",
+    image: "/assets/promotions/mega-bonus.webp",
     imageAlt: {
-      en: "A black envelope with a plain gold seal",
-      ms: "Sampul hitam dengan cap emas polos",
-      zh: "带有素金封印的黑色信封",
+      en: "XE8 mega bonus campaign banner",
+      ms: "Sepanduk kempen mega bonus XE8",
+      zh: "XE8 超级奖励活动横幅",
     },
     title: {
       en: "Welcome offer",
@@ -64,11 +64,11 @@ export const promotions: Promotion[] = [
   {
     id: "ongoing-offers",
     slug: "ongoing-offers",
-    image: "/images/promo-season.jpg",
+    image: "/assets/promotions/tasks.webp",
     imageAlt: {
-      en: "A low glass and blank cards on a dark table",
-      ms: "Gelas rendah dan kad kosong di atas meja gelap",
-      zh: "深色桌面上的矮杯与空白纸牌",
+      en: "XE8 tasks and rewards campaign banner",
+      ms: "Sepanduk kempen tugas dan ganjaran XE8",
+      zh: "XE8 任务奖励活动横幅",
     },
     title: {
       en: "Ongoing offers",
@@ -119,11 +119,11 @@ export const promotions: Promotion[] = [
   {
     id: "vip-access",
     slug: "vip-access",
-    image: "/images/promo-vip.jpg",
+    image: "/assets/promotions/vip.webp",
     imageAlt: {
-      en: "A black key and a slim gold card sleeve",
-      ms: "Kunci hitam dan sarung kad emas yang nipis",
-      zh: "一把黑钥匙与纤薄的金色卡套",
+      en: "XE8 VIP campaign banner",
+      ms: "Sepanduk kempen VIP XE8",
+      zh: "XE8 VIP 活动横幅",
     },
     title: {
       en: "VIP access",
@@ -169,11 +169,11 @@ export const promotions: Promotion[] = [
   {
     id: "seasonal-events",
     slug: "seasonal-events",
-    image: "/images/why.jpg",
+    image: "/assets/hero/members-day.webp",
     imageAlt: {
-      en: "A dark corridor opening onto a warm room",
-      ms: "Koridor gelap yang membuka ke bilik hangat",
-      zh: "通向暖色房间的深色走廊",
+      en: "Lucky 8 Member's Day campaign banner",
+      ms: "Sepanduk kempen Lucky 8 Member's Day",
+      zh: "Lucky 8 会员日活动横幅",
     },
     title: {
       en: "Seasonal events",

@@ -50,7 +50,7 @@ const en = {
     featuredEyebrow: "Catalog",
     featuredTitle: "Featured games",
     featuredText:
-      "A short list of titles players look for. Artwork on this site is editorial. Rules stay inside the game.",
+      "Eleven titles from the xe8 lobby, each with its own cover. Rules stay inside the game.",
     viewAllGames: "View all games",
     promotionsEyebrow: "Offers",
     promotionsTitle: "Promotions, without invented numbers",
@@ -195,7 +195,7 @@ const ms: Dictionary = {
     featuredEyebrow: "Katalog",
     featuredTitle: "Permainan pilihan",
     featuredText:
-      "Senarai pendek tajuk yang dicari pemain. Karya seni di laman ini bersifat editorial. Peraturan kekal dalam permainan.",
+      "Sebelas tajuk dari lobi xe8, setiap satu dengan kulitnya sendiri. Peraturan kekal dalam permainan.",
     viewAllGames: "Lihat semua permainan",
     promotionsEyebrow: "Tawaran",
     promotionsTitle: "Promosi, tanpa angka yang direka",
@@ -335,7 +335,7 @@ const zh: Dictionary = {
     categoriesText: "每个分类是不同的游戏类型。先读简短说明，再进入其中的作品。",
     featuredEyebrow: "目录",
     featuredTitle: "精选游戏",
-    featuredText: "玩家常找的一小部分作品。本站图片为编辑配图。规则仍在游戏内。",
+    featuredText: "来自 xe8 大厅的十一款作品，每款都有自己的封面。规则仍在游戏内。",
     viewAllGames: "查看全部游戏",
     promotionsEyebrow: "优惠",
     promotionsTitle: "优惠说明，不编造数字",

@@ -16,46 +16,46 @@ import { t } from "@/lib/utils";
 const copy = {
   en: {
     title: "XE8 download and mobile access",
-    description: "Use XE8 on Android, iOS or a mobile browser, and install a package only from the official entry.",
-    lede: "The mobile browser is the reliable path. A home-screen shortcut is optional. An install file is only safe when the official entry offers it.",
+    description: "Open XE8 in the mobile browser. Android can also install the official APK from xe8.net/download-apk/.",
+    lede: "iOS uses Safari or Chrome. Android can use the browser or the official APK. This page does not show an App Store or Play Store badge.",
     eyebrow: "Download",
-    points: ["Browser on Android and iOS", "Optional home-screen shortcut", "No files from private chats"],
+    points: ["iOS in Safari or Chrome", "Official Android APK on xe8.net/download-apk/", "No files from private chats"],
     cta: "How to sign in",
     steps: [
       { title: "Open the official address", text: "Type or bookmark the address you already trust. Do not follow a shortened link from a stranger." },
       { title: "Sign in", text: "Use the same account as on desktop. Recovery stays on the official login screen." },
       { title: "Add a shortcut if you want one", text: "The browser menu can place XE8 on the home screen. That icon opens the site." },
-      { title: "Install only an official package", text: "If Android installation is offered, it is on that same entry. Ignore APK files sent in chat." },
+      { title: "Install only the official package", text: "The Android APK is published at xe8.net/download-apk/. Ignore APK files sent in chat." },
     ],
     security: "Check the address before you enter a password. Sign out on a shared phone. Staff will not ask you to install a file in order to unlock a withdrawal.",
   },
   ms: {
     title: "Muat turun dan akses mudah alih XE8",
-    description: "Guna XE8 pada Android, iOS atau pelayar mudah alih, dan pasang pakej hanya dari pintu rasmi.",
-    lede: "Pelayar mudah alih ialah laluan yang boleh dipercayai. Pintasan skrin utama adalah pilihan. Fail pemasangan hanya selamat apabila pintu rasmi menawarkannya.",
+    description: "Buka XE8 dalam pelayar mudah alih. Android juga boleh memasang APK rasmi dari xe8.net/download-apk/.",
+    lede: "iOS menggunakan Safari atau Chrome. Android boleh guna pelayar atau APK rasmi. Halaman ini tidak memaparkan lencana App Store atau Play Store.",
     eyebrow: "Muat turun",
-    points: ["Pelayar pada Android dan iOS", "Pintasan skrin utama pilihan", "Tiada fail dari sembang peribadi"],
+    points: ["iOS dalam Safari atau Chrome", "APK Android rasmi di xe8.net/download-apk/", "Tiada fail dari sembang peribadi"],
     cta: "Cara log masuk",
     steps: [
       { title: "Buka alamat rasmi", text: "Taip atau tandakan alamat yang sudah anda percayai. Jangan ikut pautan pendek daripada orang yang tidak dikenali." },
       { title: "Log masuk", text: "Gunakan akaun yang sama seperti di desktop. Pemulihan kekal pada skrin log masuk rasmi." },
       { title: "Tambah pintasan jika mahu", text: "Menu pelayar boleh meletakkan XE8 pada skrin utama. Ikon itu membuka laman." },
-      { title: "Pasang hanya pakej rasmi", text: "Jika pemasangan Android ditawarkan, ia ada pada pintu yang sama. Abaikan fail APK dalam sembang." },
+      { title: "Pasang hanya pakej rasmi", text: "APK Android diterbitkan di xe8.net/download-apk/. Abaikan fail APK dalam sembang." },
     ],
     security: "Semak alamat sebelum memasukkan kata laluan. Log keluar pada telefon kongsi. Kakitangan tidak akan meminta anda memasang fail untuk membuka pengeluaran.",
   },
   zh: {
     title: "XE8 下载与手机访问",
-    description: "在 Android、iOS 或手机浏览器上使用 XE8，并且只从官方入口安装安装包。",
-    lede: "手机浏览器是可靠的方式。主屏幕快捷方式是可选的。只有官方入口提供的安装文件才安全。",
+    description: "用手机浏览器打开 XE8。Android 也可以从 xe8.net/download-apk/ 安装官方 APK。",
+    lede: "iOS 使用 Safari 或 Chrome。Android 可以用浏览器或官方 APK。本页不展示 App Store 或 Play Store 徽章。",
     eyebrow: "下载",
-    points: ["Android 和 iOS 浏览器", "可选的主屏幕快捷方式", "不要用私聊里的文件"],
+    points: ["iOS 使用 Safari 或 Chrome", "官方 Android APK：xe8.net/download-apk/", "不要用私聊里的文件"],
     cta: "如何登录",
     steps: [
       { title: "打开官方地址", text: "输入或收藏你已经信任的地址。不要跟随陌生人发来的短链接。" },
       { title: "登录", text: "使用与电脑相同的账户。找回密码仍在官方登录页。" },
       { title: "如果需要，添加快捷方式", text: "浏览器菜单可以把 XE8 放到主屏幕。那个图标打开的是网站。" },
-      { title: "只安装官方安装包", text: "如果提供 Android 安装，它会在同一个入口。忽略聊天里的 APK。" },
+      { title: "只安装官方安装包", text: "Android APK 发布在 xe8.net/download-apk/。忽略聊天里的 APK。" },
     ],
     security: "输入密码前核对地址。共用手机请退出。工作人员不会要求你安装文件才能解锁提款。",
   },
@@ -64,7 +64,7 @@ const copy = {
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params;
   if (!isLocale(locale)) return {};
-  return buildMetadata({ locale, path: "/download", title: copy[locale].title, description: copy[locale].description, image: "/images/mobile.jpg" });
+  return buildMetadata({ locale, path: "/download", title: copy[locale].title, description: copy[locale].description, image: "/assets/download/app-phone.webp" });
 }
 
 export default async function Page({ params }: { params: Promise<{ locale: string }> }) {

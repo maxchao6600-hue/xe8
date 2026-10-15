@@ -16,7 +16,7 @@ export function buildMetadata({
   path,
   title,
   description,
-  image = "/images/og.jpg",
+  image = "/assets/social/og.jpg",
   noIndex = false,
 }: MetaInput): Metadata {
   const url = absoluteUrl(locale, path);
@@ -50,7 +50,7 @@ export function buildMetadata({
         {
           url: image.startsWith("http") ? image : `${siteUrl}${image}`,
           width: 1200,
-          height: 675,
+          height: 630,
           alt: title,
         },
       ],

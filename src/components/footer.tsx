@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { BrandLogo } from "@/components/brand-logo";
 import type { Dictionary } from "@/i18n/dictionaries";
 import type { Locale } from "@/i18n/locale";
 import { localePath } from "@/lib/site";
@@ -47,7 +48,7 @@ export function Footer({ locale, dict }: { locale: Locale; dict: Dictionary }) {
     <footer className="border-t border-line">
       <div className="shell grid gap-10 py-14 sm:grid-cols-2 lg:grid-cols-5">
         <div className="lg:col-span-1">
-          <p className="text-lg font-semibold tracking-[0.18em]">XE8</p>
+          <BrandLogo className="h-11 w-auto" />
           <p className="mt-4 text-sm leading-6 text-muted">{dict.footer.blurb}</p>
         </div>
         {columns.map((column) => (

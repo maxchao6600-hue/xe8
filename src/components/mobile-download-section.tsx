@@ -43,13 +43,14 @@ export function MobileDownloadSection({
           {cta}
         </Link>
       </div>
-      <div className="relative mx-auto aspect-[3/4] w-full max-w-sm overflow-hidden rounded-[2rem]">
+      <div className="relative mx-auto aspect-[680/913] w-full max-w-sm">
         <Image
-          src="/images/mobile.jpg"
-          alt="A phone showing a dark game screen"
-          fill
+          src="/assets/download/app-phone.webp"
+          alt="XE8 open on a phone, showing the lobby"
+          width={680}
+          height={913}
           sizes="(max-width: 1024px) 80vw, 360px"
-          className="object-cover"
+          className="h-auto w-full"
         />
       </div>
     </section>

@@ -26,7 +26,7 @@ export async function generateMetadata({
     path: "/games",
     title: dict.games.title,
     description: dict.games.description,
-    image: "/images/cat-slots.jpg",
+    image: "/assets/categories/slots.webp",
   });
 }
 

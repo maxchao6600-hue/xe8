@@ -40,7 +40,7 @@ export async function generateMetadata({
     path: "/promotions",
     title: copy[locale].title,
     description: copy[locale].description,
-    image: "/images/promo-welcome.jpg",
+    image: "/assets/promotions/mega-bonus.webp",
   });
 }
 

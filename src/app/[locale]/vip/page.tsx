@@ -49,7 +49,7 @@ const copy = {
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params;
   if (!isLocale(locale)) return {};
-  return buildMetadata({ locale, path: "/vip", title: copy[locale].title, description: copy[locale].description, image: "/images/vip.jpg" });
+  return buildMetadata({ locale, path: "/vip", title: copy[locale].title, description: copy[locale].description, image: "/assets/promotions/vip.webp" });
 }
 
 export default async function Page({ params }: { params: Promise<{ locale: string }> }) {
@@ -78,7 +78,7 @@ export default async function Page({ params }: { params: Promise<{ locale: strin
           </Link>
         </div>
         <div className="relative aspect-video overflow-hidden rounded-3xl">
-          <Image src="/images/vip.jpg" alt={page.title} fill priority sizes="(max-width: 1024px) 100vw, 540px" className="object-cover" />
+          <Image src="/assets/promotions/vip.webp" alt={page.title} fill priority sizes="(max-width: 1024px) 100vw, 540px" className="object-cover" />
         </div>
       </div>
       <div className="mt-12 grid gap-4 md:grid-cols-3">

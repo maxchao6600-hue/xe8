@@ -35,9 +35,9 @@ export const homeFaqs: FaqItem[] = [
       zh: "可以使用哪些支付方式？",
     },
     answer: {
-      en: "The cashier lists the methods open for your account. FPX, DuitNow, Touch 'n Go eWallet, GrabPay and bank transfer are explained here because Malaysian players ask about them. A method is usable only when it appears on the cashier.",
-      ms: "Kaunter menyenaraikan kaedah yang dibuka untuk akaun anda. FPX, DuitNow, Touch 'n Go eWallet, GrabPay dan pindahan bank diterangkan di sini kerana pemain di Malaysia bertanya mengenainya. Sesuatu kaedah hanya boleh digunakan apabila ia muncul di kaunter.",
-      zh: "收银台列出你的账户当前可用的方式。这里说明 FPX、DuitNow、Touch 'n Go eWallet、GrabPay 和银行转账，是因为马来西亚玩家常问。只有出现在收银台的方式才可使用。",
+      en: "xe8 lists Touch 'n Go eWallet, Maybank2u, Boost, GrabPay, DuitNow and USDT. Use a method when the cashier shows it.",
+      ms: "xe8 menyenaraikan Touch 'n Go eWallet, Maybank2u, Boost, GrabPay, DuitNow dan USDT. Guna kaedah itu apabila kaunter menunjukkannya.",
+      zh: "xe8 列出 Touch 'n Go eWallet、Maybank2u、Boost、GrabPay、DuitNow 和 USDT。收银台显示该方式时再使用。",
     },
   },
   {
@@ -61,9 +61,9 @@ export const homeFaqs: FaqItem[] = [
       zh: "可以在手机上玩吗？",
     },
     answer: {
-      en: "Yes. The mobile browser is the straightforward option on Android and iOS. Use an install or home-screen step only when the official entry offers it. Do not install a package sent in a private message.",
-      ms: "Ya. Pelayar mudah alih ialah pilihan yang terus pada Android dan iOS. Gunakan langkah pemasangan atau skrin utama hanya apabila pintu rasmi menawarkannya. Jangan pasang pakej yang dihantar dalam mesej peribadi.",
-      zh: "可以。Android 和 iOS 上，手机浏览器是直接的方式。只有官方入口提供安装或主屏幕步骤时才使用。不要安装私聊发来的安装包。",
+      en: "Yes. iOS uses Safari or Chrome. Android can use the browser or the official APK published at xe8.net/download-apk/. Do not install a package sent in a private message.",
+      ms: "Ya. iOS menggunakan Safari atau Chrome. Android boleh guna pelayar atau APK rasmi di xe8.net/download-apk/. Jangan pasang pakej yang dihantar dalam mesej peribadi.",
+      zh: "可以。iOS 使用 Safari 或 Chrome。Android 可以用浏览器，或使用 xe8.net/download-apk/ 上的官方 APK。不要安装私聊发来的安装包。",
     },
   },
   {
@@ -119,9 +119,9 @@ export const downloadFaqs: FaqItem[] = [
       zh: "有 iOS 应用吗？",
     },
     answer: {
-      en: "Use the mobile browser unless the official XE8 entry shows an iOS install or home-screen step. This site does not link to a third-party store listing.",
-      ms: "Gunakan pelayar mudah alih melainkan pintu rasmi XE8 menunjukkan langkah pemasangan iOS atau skrin utama. Laman ini tidak memaut ke senarai kedai pihak ketiga.",
-      zh: "除非官方 XE8 入口显示 iOS 安装或主屏幕步骤，否则请使用手机浏览器。本站不链接到第三方商店页面。",
+      en: "iOS uses Safari or Chrome. This site does not show an App Store badge.",
+      ms: "iOS menggunakan Safari atau Chrome. Laman ini tidak memaparkan lencana App Store.",
+      zh: "iOS 使用 Safari 或 Chrome。本站不展示 App Store 徽章。",
     },
   },
   {
@@ -132,9 +132,9 @@ export const downloadFaqs: FaqItem[] = [
       zh: "Android 从哪里下载？",
     },
     answer: {
-      en: "Only from the official entry, and only if an Android package is offered there. Ignore APK files forwarded in chat groups or email.",
-      ms: "Hanya dari pintu rasmi, dan hanya jika pakej Android ditawarkan di sana. Abaikan fail APK yang dikirim dalam kumpulan sembang atau e-mel.",
-      zh: "只从官方入口下载，并且仅当那里提供 Android 安装包时。忽略聊天群或邮件转发的 APK。",
+      en: "The official Android APK is published at xe8.net/download-apk/. Ignore APK files forwarded in chat groups or email.",
+      ms: "APK Android rasmi diterbitkan di xe8.net/download-apk/. Abaikan fail APK yang dikirim dalam kumpulan sembang atau e-mel.",
+      zh: "官方 Android APK 发布在 xe8.net/download-apk/。忽略聊天群或邮件转发的 APK。",
     },
   },
 ];

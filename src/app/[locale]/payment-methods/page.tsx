@@ -18,17 +18,17 @@ import { t } from "@/lib/utils";
 const copy = {
   en: {
     title: "XE8 payment methods",
-    description: "How Malaysian players read the XE8 cashier for FPX, DuitNow, e-wallets and bank transfer.",
+    description: "Touch 'n Go, Maybank2u, Boost, GrabPay, DuitNow and USDT on the xe8 cashier.",
     lede: "The cashier is the list that matters. A method below is usable only when it appears there. This page does not state a processing time.",
   },
   ms: {
     title: "Kaedah pembayaran XE8",
-    description: "Cara pemain di Malaysia membaca kaunter XE8 untuk FPX, DuitNow, e-dompet dan pindahan bank.",
+    description: "Touch 'n Go, Maybank2u, Boost, GrabPay, DuitNow dan USDT pada kaunter xe8.",
     lede: "Kaunter ialah senarai yang penting. Kaedah di bawah hanya boleh digunakan apabila ia muncul di sana. Halaman ini tidak menyatakan masa pemprosesan.",
   },
   zh: {
     title: "XE8 支付方式",
-    description: "马来西亚玩家如何阅读 XE8 收银台中的 FPX、DuitNow、电子钱包和银行转账。",
+    description: "xe8 收银台中的 Touch 'n Go、Maybank2u、Boost、GrabPay、DuitNow 和 USDT。",
     lede: "收银台才是有效清单。下面的方式只有出现在那里时才可使用。本页不写处理时间。",
   },
 };
@@ -36,7 +36,7 @@ const copy = {
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params;
   if (!isLocale(locale)) return {};
-  return buildMetadata({ locale, path: "/payment-methods", title: copy[locale].title, description: copy[locale].description, image: "/images/payment.jpg" });
+  return buildMetadata({ locale, path: "/payment-methods", title: copy[locale].title, description: copy[locale].description, image: "/assets/payments/tng.webp" });
 }
 
 export default async function Page({ params }: { params: Promise<{ locale: string }> }) {
@@ -57,7 +57,7 @@ export default async function Page({ params }: { params: Promise<{ locale: strin
           faqJson(paymentFaqs.map((item) => ({ question: t(item.question, locale), answer: t(item.answer, locale) }))),
         ]}
       />
-      <PageHero eyebrow={dict.nav.payment} title={page.title} lede={page.lede} image="/images/payment.jpg" alt={page.title} />
+      <PageHero eyebrow={dict.nav.payment} title={page.title} lede={page.lede} image="/assets/payments/tng.webp" alt="Touch 'n Go" />
       <div className="shell pb-16">
         <Breadcrumbs
           label={dict.common.home}

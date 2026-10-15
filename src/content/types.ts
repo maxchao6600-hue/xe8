@@ -26,6 +26,7 @@ export type Provider = {
   slug: string;
   name: string;
   mark: string;
+  logo?: string;
   description: L10n;
   overview: L10n;
 };
@@ -111,6 +112,7 @@ export type FaqItem = {
 export type PaymentMethod = {
   id: string;
   name: string;
+  logo: string;
   deposit: boolean;
   withdrawal: boolean;
   summary: L10n;

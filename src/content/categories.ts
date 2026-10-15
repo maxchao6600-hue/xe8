@@ -4,11 +4,11 @@ export const categories: Category[] = [
   {
     id: "slots",
     slug: "slots",
-    image: "/images/cat-slots.jpg",
+    image: "/assets/categories/slots.webp",
     imageAlt: {
-      en: "Dark slot reels lit by a warm spotlight",
-      ms: "Gulungan slot gelap dengan cahaya hangat",
-      zh: "暖光下的深色老虎机转轮",
+      en: "AskmeSlot mahjong tiles and a gold pot",
+      ms: "Jubin mahjong AskmeSlot dan periuk emas",
+      zh: "AskmeSlot 的麻将牌与金盆",
     },
     name: { en: "Slots", ms: "Slot", zh: "老虎机" },
     description: {
@@ -20,11 +20,11 @@ export const categories: Category[] = [
   {
     id: "live-casino",
     slug: "live-casino",
-    image: "/images/cat-live.jpg",
+    image: "/assets/categories/live.webp",
     imageAlt: {
-      en: "A private baccarat table in low warm light",
-      ms: "Meja baccarat peribadi dalam cahaya hangat",
-      zh: "暖光中的私人百家乐牌桌",
+      en: "Evolution baccarat and roulette artwork",
+      ms: "Karya baccarat dan rolet Evolution",
+      zh: "Evolution 百家乐与轮盘画面",
     },
     name: { en: "Live Casino", ms: "Kasino Langsung", zh: "真人娱乐场" },
     description: {
@@ -36,11 +36,11 @@ export const categories: Category[] = [
   {
     id: "sports",
     slug: "sports",
-    image: "/images/cat-sports.jpg",
+    image: "/assets/categories/sports.webp",
     imageAlt: {
-      en: "A football pitch at night under warm floodlights",
-      ms: "Padang bola pada waktu malam di bawah lampu hangat",
-      zh: "暖色灯光下的夜间足球场",
+      en: "A World Cup trophy, football and basketball on a stadium pitch",
+      ms: "Trofi Piala Dunia, bola sepak dan bola keranjang di stadium",
+      zh: "球场上的世界杯奖杯、足球和篮球",
     },
     name: { en: "Sports", ms: "Sukan", zh: "体育" },
     description: {
@@ -52,11 +52,11 @@ export const categories: Category[] = [
   {
     id: "fishing",
     slug: "fishing",
-    image: "/images/cat-fishing.jpg",
+    image: "/assets/categories/fishing.webp",
     imageAlt: {
-      en: "Fish moving through a shaft of gold light underwater",
-      ms: "Ikan bergerak melalui alur cahaya emas di dalam air",
-      zh: "鱼群穿过水下的一道金色光柱",
+      en: "Jackpot Fishing 2 artwork with a shark and an octopus",
+      ms: "Karya Jackpot Fishing 2 dengan jerung dan sotong",
+      zh: "Jackpot Fishing 2 的鲨鱼与章鱼画面",
     },
     name: { en: "Fishing", ms: "Memancing", zh: "捕鱼" },
     description: {
@@ -68,11 +68,11 @@ export const categories: Category[] = [
   {
     id: "4d",
     slug: "4d",
-    image: "/images/cat-4d.jpg",
+    image: "/assets/categories/4d.webp",
     imageAlt: {
-      en: "Four ivory number tiles on black stone",
-      ms: "Empat jubin nombor gading di atas batu hitam",
-      zh: "黑石上的四枚象牙色数字牌",
+      en: "EKOR lottery machine with numbered balls",
+      ms: "Mesin loteri EKOR dengan bola bernombor",
+      zh: "EKOR 摇奖机与号码球",
     },
     name: { en: "4D", ms: "4D", zh: "4D" },
     description: {
@@ -84,11 +84,11 @@ export const categories: Category[] = [
   {
     id: "lottery",
     slug: "lottery",
-    image: "/images/cat-lottery.jpg",
+    image: "/assets/categories/4d.webp",
     imageAlt: {
-      en: "Gold and ivory spheres in a black velvet tray",
-      ms: "Sfera emas dan gading di dalam dulang baldu hitam",
-      zh: "黑丝绒托盘中的金色与象牙色圆球",
+      en: "EKOR draw machine used for lottery games",
+      ms: "Mesin cabutan EKOR untuk permainan loteri",
+      zh: "用于彩票游戏的 EKOR 摇奖机",
     },
     name: { en: "Lottery", ms: "Loteri", zh: "彩票" },
     description: {
@@ -100,11 +100,11 @@ export const categories: Category[] = [
   {
     id: "arcade",
     slug: "arcade",
-    image: "/images/games/game-arcade.jpg",
+    image: "/assets/categories/arcade.webp",
     imageAlt: {
-      en: "A dark arcade cabinet with a warm abstract screen",
-      ms: "Kabinet arked gelap dengan skrin abstrak yang hangat",
-      zh: "深色街机柜，屏幕上是温暖的抽象画面",
+      en: "Playtech lobby artwork",
+      ms: "Karya lobi Playtech",
+      zh: "Playtech 大厅画面",
     },
     name: { en: "Arcade", ms: "Arked", zh: "街机" },
     description: {

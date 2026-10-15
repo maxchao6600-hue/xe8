@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { BrandLogo } from "@/components/brand-logo";
 import { LanguageSwitcher } from "@/components/language-switcher";
 import { MobileNav } from "@/components/mobile-nav";
 import type { Dictionary } from "@/i18n/dictionaries";
@@ -21,8 +22,8 @@ export function Header({ locale, dict }: { locale: Locale; dict: Dictionary }) {
   return (
     <header className="sticky top-0 z-50 border-b border-line bg-bg/90 backdrop-blur-md">
       <div className="shell flex h-14 items-center gap-2 md:h-16">
-        <Link href={localePath(locale)} className="mr-1 text-lg font-semibold tracking-[0.18em] text-ink">
-          XE8
+        <Link href={localePath(locale)} className="mr-2 shrink-0">
+          <BrandLogo />
         </Link>
         <MobileNav
           locale={locale}

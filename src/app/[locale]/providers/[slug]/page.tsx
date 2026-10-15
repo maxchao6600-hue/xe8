@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Breadcrumbs } from "@/components/breadcrumbs";
@@ -68,9 +69,15 @@ export default async function ProviderPage({
         ]}
       />
       <div className="flex items-start gap-5">
-        <span className="flex h-20 w-20 items-center justify-center rounded-3xl bg-elevated text-lg font-semibold text-gold">
-          {provider.mark}
-        </span>
+        {provider.logo ? (
+          <span className="flex h-20 w-36 shrink-0 items-center justify-center rounded-3xl bg-[#f6f3ee] px-3">
+            <Image src={provider.logo} alt="" width={300} height={64} className="h-10 w-auto object-contain" />
+          </span>
+        ) : (
+          <span className="flex h-20 w-20 items-center justify-center rounded-3xl bg-elevated text-lg font-semibold text-gold">
+            {provider.mark}
+          </span>
+        )}
         <div>
           <h1 className="font-display text-4xl sm:text-5xl">{provider.name}</h1>
           <p className="mt-3 max-w-2xl text-lg leading-8 text-muted">{t(provider.overview, locale)}</p>
